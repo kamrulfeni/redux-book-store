@@ -1,0 +1,15 @@
+.footerNav {
+  list-style: none;
+  padding: 0;
+}
+.footerNav li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footerNav li a {
+  color: #000;
+  font-weight: normal;
+}

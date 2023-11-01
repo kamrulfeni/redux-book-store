@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+  .navbar-nav .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-nav .nav-link:not(:first-child) {
+    border-left: 1px solid black;
+  }
+}

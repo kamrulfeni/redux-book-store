@@ -1,0 +1,43 @@
+.user_form {
+  background-color: #3cc4c0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_form-body {
+  background-color: #1e4861;
+  max-width: 400px;
+  margin: auto;
+  padding: 100px 20px 70px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.user_form input,
+.user_form select {
+  background-color: #0e2d3f;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #fff;
+  outline: none !important;
+  transition: 0.3s ease-in-out;
+}
+.user_form input:focus {
+  border: 1px solid #3cc4c0;
+}
+
+.user_form button {
+  background: #3cc4c0;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #3cc4c0;
+}
+.user_form button:hover {
+  border: 1px solid #3cc4c0;
+}

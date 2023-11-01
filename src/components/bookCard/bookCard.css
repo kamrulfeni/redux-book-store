@@ -1,0 +1,26 @@
+.wishLIst {
+  cursor: pointer;
+  color: royalblue;
+}
+
+
+
+.bookCard {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: transparent;
+  user-select: none;
+}
+
+.bookImage img {
+  transition: 0.3s ease-in-out;
+}
+
+.bookCard:hover .bookImage {
+  background-color: black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.bookCard:hover img {
+  opacity: 0.5;
+}

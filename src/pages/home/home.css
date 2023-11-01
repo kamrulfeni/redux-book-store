@@ -1,0 +1,20 @@
+.banner {
+  background-image: url("/images/banner.jpeg");
+  background-color: rgba(0, 0, 0, 0.384);
+  background-blend-mode: multiply;
+  height: calc(100vh - 50px);
+}
+
+.heading span {
+  position: relative;
+}
+
+.heading span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
