@@ -43,7 +43,7 @@ const BookCard = ({ book }: { book: IBook }) => {
               variant="top"
               //src={book.image || "images/bookCover.webp"}
               // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-              src={` ${book.image}`}
+              src={`${book.image}`}
 
               style={{ height: "300px", position: "relative" }}
             />

@@ -68,7 +68,11 @@ const Footer = () => {
             <hr />
             <ul className="footerNav">
               <li>
-                <Link to="/">
+                <Link
+                  to={{
+                    pathname: "https://www.facebook.com/home.php",
+                  }}
+                >
                   <FaFacebookF className="me-2" /> <span> Facebook </span>
                 </Link>
               </li>

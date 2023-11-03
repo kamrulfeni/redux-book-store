@@ -11,7 +11,8 @@ import Wishlist from "./pages/wishlist/Wishlist";
 import AddNew from "./pages/addNew/AddNew";
 import UpdateBook from "./pages/updateBook/UpdateBook";
 import AuthRoute from "./components/authRoute/AuthRoute";
-
+import AdminRoute from "./components/adminRoute/AdminRoute";
+import UserInformation from "./pages/admin/userInFormation/UserInformation";
 const App = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +21,19 @@ const App = createBrowserRouter([
   {
     path: "/books",
     element: <Books />,
+  },
+  {
+    path: "/userinformation",
+    element: (
+      <UserInformation />
+        
+    ),
+  },
+  {
+    path: "/admin",
+    element: (
+       <AdminRoute />
+  ),
   },
   {
     path: "/wishlist",

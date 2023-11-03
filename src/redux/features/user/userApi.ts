@@ -3,12 +3,15 @@ import { TApiResponse } from "../../../interface/globalInterface";
 import { api } from "../api";
 
 export const registerApi = api.injectEndpoints({
+
+
   endpoints: (builder) => ({
     getMyData: builder.query<TApiResponse<TUser>, undefined>({
       query: () => `/users/me`,
       transformErrorResponse: (response) => response.data,
       providesTags: ["user"],
     }),
+
     postRegister: builder.mutation({
       query: (data: TRegister) => ({
         url: `/users/signup`,
@@ -17,6 +20,8 @@ export const registerApi = api.injectEndpoints({
       }),
       transformErrorResponse: (response) => response.data,
     }),
+
+    
     postLogin: builder.mutation({
       query: (data: TLogin) => ({
         url: `/users/login`,

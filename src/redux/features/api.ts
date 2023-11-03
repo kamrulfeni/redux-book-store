@@ -4,7 +4,7 @@ export const api = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
     //baseUrl: "https://book-librery.vercel.app/api/v1",  https://book-store-server-omega.vercel.app/api/v1/
-     baseUrl: "http://localhost:5000/api/v1",
+    baseUrl: "https://book-store-server-omega.vercel.appnpm /api/v1",
     prepareHeaders: (headers) => {
       const token = localStorage.getItem("token");
       if (token) {

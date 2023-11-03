@@ -15,7 +15,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const dispatch = useAppDispatch();
 
   const { data, isLoading } = useGetMyDataQuery(undefined);
-
+ console.log(data);
   useEffect(() => {
     if (data?.success) {
       dispatch(addUser(data.data));
